@@ -1,0 +1,22 @@
+<div class="tasks">
+	<p>
+	  <strong>Title:</strong>
+	  <%= link_to_unless_current task.title, task %>
+	</p>
+
+	<p>
+	  <strong>Due:</strong>
+	  <%= task.due %>
+	</p>
+
+	<p>
+	  <strong>Due date:</strong>
+	  <%= task.due_date %>
+	</p>
+
+	<p>
+	  <strong>Priority:</strong>
+	  <%= task.priority %>
+	</p>
+
+</div>
