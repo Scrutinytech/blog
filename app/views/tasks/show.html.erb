@@ -3,4 +3,6 @@
 <%= render @task %>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Delete', task_path(@task), method: :Delete, data:{confirm: "Are you sure?"} %> |
+
 <%= link_to 'Back', tasks_path %>
